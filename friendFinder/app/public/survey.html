@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Friends Finder</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Survey questions</h2>
+      <hr />
+      <h3><strong>ABOUT YOU</strong></h3>
+      <br />
+      <form role="form">
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required />
+        <h4>Link to Photo image (Requiref)</h4>
+        <input type="text" id="photo" class="form-control" required />
+        <hr />
+        <!--Questions-->
+        <h3><strong> Question 1</strong></h3>
+        <h4>
+          On an Average, How Much Time Do You Generally Take to Get Ready before
+          You Go Out?
+        </h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q1">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 2</strong></h3>
+        <h4>Do you cut out coupons but then never use them?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q2">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 3</strong></h3>
+        <h4>Do you consider yourself an introvert or an extrovert?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q3">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 4</strong></h3>
+        <h4>Do you judge a book by its cover?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q4">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 5</strong></h3>
+        <h4>Ever have a Deja-vu feeling?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q5">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 6</strong></h3>
+        <h4>Do you think confessions make a relationship stronger?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q6">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 7</strong></h3>
+        <h4>Do you always smile for pictures?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q7">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 8</strong></h3>
+        <h4>Can you curl your tongue?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q8">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 9</strong></h3>
+        <h4>Do you sing in the car?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q9">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+
+        <h3><strong> Question 10</strong></h3>
+        <h4>Do you ever count your steps when you walk?</h4>
+        <div class="form-inline">
+          <select class="custom-select my-1 mr-sm-2" id="q10">
+            <option selected> Choose an option </option>
+            <option value="1">1 (Strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly agree)</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <!-- <button class="btn btn-primary btn-lg btn-block" id="submit">
+        Submit <i class="fa fa-check-circle" aria-hidden="true"></i>
+      </button> -->
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+      </form>
+    </div>
+    <br />
+    <br />
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">API friends list</a> |
+          <a href="https://github.com/marajita/friendfinder">Github repo</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imagemodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="exampleModalLabel">
+              We found a new match for you!
+            </h5>
+            <img src="" id="image" height="80%" width="80%" />
+            <div class="caption" id="caption" text="center"></div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // $("#submit").on("click", function(event) {
+      $(".submit").on("click", function(event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var friendSearch = {
+          userName: $("#name")
+            .val()
+            .trim(),
+          userphoto: $("#photo")
+            .val()
+            .trim(),
+          scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+          // scores: [
+          //   $("#q1")
+          //     .val()
+          //     .trim(),
+          //   $("#q2")
+          //     .val()
+          //     .trim(),
+          //   $("#q3")
+          //     .val()
+          //     .trim(),
+          //   $("#q4")
+          //     .val()
+          //     .trim(),
+          //   $("#q5")
+          //     .val()
+          //     .trim(),
+          //   $("#q6")
+          //     .val()
+          //     .trim(),
+          //   $("#q7")
+          //     .val()
+          //     .trim(),
+          //   $("#q8")
+          //     .val()
+          //     .trim(),
+          //   $("#q9")
+          //     .val()
+          //     .trim(),
+          //   $("#q10")
+          //     .val()
+          //     .trim()
+          // ]
+        };
+        //console.log(friendSearch);
+
+        $.post("/api/friends", friendSearch, function(data) {
+          console.log(data);
+          // If a table is available... tell user they are booked.
+          if (data) {
+            $("#caption").text(data.userName);
+            $("#image").attr("src", data.userPhoto);
+            $("#imagemodal").modal("show");
+          }
+
+          // If a table is available... tell user they on the waiting list.
+          else {
+            alert("Sorry you are on the wait list");
+          }
+
+          //to clear the user input and clicking submit button
+          $("#name").val("");
+          $("#photo").val("");
+          [
+            $("#q1").val(""),
+            $("#q2").val(""),
+            $("#q3").val(""),
+            $("#q4").val(""),
+            $("#q5").val(""),
+            $("#q6").val(""),
+            $("#q7").val(""),
+            $("#q8").val(""),
+            $("#q9").val(""),
+            $("#q10").val("")
+          ];
+        });
+      });
+    </script>
+  </body>
+</html>
