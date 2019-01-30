@@ -35,7 +35,7 @@
         </h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q1">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -48,7 +48,7 @@
         <h4>Do you cut out coupons but then never use them?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q2">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -61,7 +61,7 @@
         <h4>Do you consider yourself an introvert or an extrovert?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q3">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -74,7 +74,7 @@
         <h4>Do you judge a book by its cover?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q4">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -87,7 +87,7 @@
         <h4>Ever have a Deja-vu feeling?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q5">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -100,7 +100,7 @@
         <h4>Do you think confessions make a relationship stronger?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q6">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -113,7 +113,7 @@
         <h4>Do you always smile for pictures?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q7">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -126,7 +126,7 @@
         <h4>Can you curl your tongue?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q8">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -139,7 +139,7 @@
         <h4>Do you sing in the car?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q9">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -152,7 +152,7 @@
         <h4>Do you ever count your steps when you walk?</h4>
         <div class="form-inline">
           <select class="custom-select my-1 mr-sm-2" id="q10">
-            <option selected> Choose an option </option>
+            <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
             <option value="2">3</option>
@@ -228,44 +228,44 @@
           userphoto: $("#photo")
             .val()
             .trim(),
-          scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
-          // scores: [
-          //   $("#q1")
-          //     .val()
-          //     .trim(),
-          //   $("#q2")
-          //     .val()
-          //     .trim(),
-          //   $("#q3")
-          //     .val()
-          //     .trim(),
-          //   $("#q4")
-          //     .val()
-          //     .trim(),
-          //   $("#q5")
-          //     .val()
-          //     .trim(),
-          //   $("#q6")
-          //     .val()
-          //     .trim(),
-          //   $("#q7")
-          //     .val()
-          //     .trim(),
-          //   $("#q8")
-          //     .val()
-          //     .trim(),
-          //   $("#q9")
-          //     .val()
-          //     .trim(),
-          //   $("#q10")
-          //     .val()
-          //     .trim()
-          // ]
+          // scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+          scores: [
+            $("#q1")
+              .val()
+              .trim(),
+            $("#q2")
+              .val()
+              .trim(),
+            $("#q3")
+              .val()
+              .trim(),
+            $("#q4")
+              .val()
+              .trim(),
+            $("#q5")
+              .val()
+              .trim(),
+            $("#q6")
+              .val()
+              .trim(),
+            $("#q7")
+              .val()
+              .trim(),
+            $("#q8")
+              .val()
+              .trim(),
+            $("#q9")
+              .val()
+              .trim(),
+            $("#q10")
+              .val()
+              .trim()
+          ]
         };
-        //console.log(friendSearch);
+        console.log(friendSearch);
 
         $.post("/api/friends", friendSearch, function(data) {
-          console.log(data);
+          console.log("hehe" + data);
           // If a table is available... tell user they are booked.
           if (data) {
             $("#caption").text(data.userName);
