@@ -4,7 +4,7 @@ This app will help to find the best match for a friend with an individual that i
 
 To use this app, go to the homepage and take the survey. Immediately after submitting the survey, the best friend will pop up. You can access the API of the users and their personalized information.
 
-#Technologies Used
+# Technologies Used
 
 - HTML
 - Bootstrap
