@@ -1,0 +1,17 @@
+{
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "friendFinder/server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node friendFinder/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
