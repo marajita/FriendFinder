@@ -16,7 +16,7 @@ var friendsArray = [
     userName: "Daenerys",
     userPhoto:
       "https://www.hardwoodandhollywood.com/wp-content/uploads/2017/09/706-Dragonstone-Daenerys-2-1024x682.jpg",
-    scores: [5, 4, 5, 3, 2, 4, 2, 1, 3, 2]
+    scores: [5, 4, 5, 3, 2, 4, 2, 5, 3, 5]
   },
   {
     userName: "Jaime Lannister",

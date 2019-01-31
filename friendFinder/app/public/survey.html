@@ -51,7 +51,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -64,7 +64,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -77,7 +77,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -90,7 +90,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -103,7 +103,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -116,7 +116,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -129,7 +129,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -142,7 +142,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -155,7 +155,7 @@
             <option value="0" selected> Choose an option </option>
             <option value="1">1 (Strongly disagree)</option>
             <option value="2">2</option>
-            <option value="2">3</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly agree)</option>
           </select>
@@ -191,26 +191,22 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <h5 class="modal-title" id="exampleModalLabel">
+            <h3 class="modal-title" id="exampleModalLabel">
               We found a new match for you!
-            </h5>
-            <img src="" id="image" height="80%" width="80%" />
-            <div class="caption" id="caption" text="center"></div>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+            </h3>
+            <hr />
+            <img src="" id="image" height="100%" width="100%" />
+            <div><h1 class="caption" id="caption"></h1></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Close
-          </button>
         </div>
       </div>
     </div>
@@ -218,83 +214,83 @@
     <script type="text/javascript">
       // $("#submit").on("click", function(event) {
       $(".submit").on("click", function(event) {
-        event.preventDefault();
+        if (formValidation()) {
+          event.preventDefault();
 
-        // Here we grab the form elements
-        var friendSearch = {
-          userName: $("#name")
-            .val()
-            .trim(),
-          userphoto: $("#photo")
-            .val()
-            .trim(),
-          // scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
-          scores: [
-            $("#q1")
+          // Here we grab the form elements
+          var friendSearch = {
+            userName: $("#name")
               .val()
               .trim(),
-            $("#q2")
+            userphoto: $("#photo")
               .val()
               .trim(),
-            $("#q3")
-              .val()
-              .trim(),
-            $("#q4")
-              .val()
-              .trim(),
-            $("#q5")
-              .val()
-              .trim(),
-            $("#q6")
-              .val()
-              .trim(),
-            $("#q7")
-              .val()
-              .trim(),
-            $("#q8")
-              .val()
-              .trim(),
-            $("#q9")
-              .val()
-              .trim(),
-            $("#q10")
-              .val()
-              .trim()
-          ]
-        };
-        console.log(friendSearch);
+            //scores: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+          console.log(friendSearch);
 
-        $.post("/api/friends", friendSearch, function(data) {
-          console.log("hehe" + data);
-          // If a table is available... tell user they are booked.
-          if (data) {
-            $("#caption").text(data.userName);
-            $("#image").attr("src", data.userPhoto);
-            $("#imagemodal").modal("show");
-          }
+          $.post("/api/friends", friendSearch, function(data) {
+            console.log("hehe" + data);
+            // If a table is available... tell user they are booked.
+            if (data) {
+              $("#caption").text(data.userName);
+              $("#image").attr("src", data.userPhoto);
+              $("#imagemodal").modal("show");
+            }
 
-          // If a table is available... tell user they on the waiting list.
-          else {
-            alert("Sorry you are on the wait list");
-          }
+            // If a table is available... tell user they on the waiting list.
+            else {
+              alert("Something went wrong!! no friends for you");
+            }
 
-          //to clear the user input and clicking submit button
-          $("#name").val("");
-          $("#photo").val("");
-          [
-            $("#q1").val(""),
-            $("#q2").val(""),
-            $("#q3").val(""),
-            $("#q4").val(""),
-            $("#q5").val(""),
-            $("#q6").val(""),
-            $("#q7").val(""),
-            $("#q8").val(""),
-            $("#q9").val(""),
-            $("#q10").val("")
-          ];
-        });
+            //to clear the user input and clicking submit button
+            $("#name").val("");
+            $("#photo").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val("");
+          });
+        } else {
+          alert("Please fill the complete form to get the best match for you.");
+        }
       });
+
+      //form validatiion
+      function formValidation() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          // .each function is used to target each jquery object
+
+          if ($(this).val() === "") isValid = false;
+        });
+
+        $(".custom-select").each(function() {
+          // .each function is used to target each jquery object
+
+          if ($(this).val() === "0") isValid = false;
+        });
+
+        return isValid;
+      }
     </script>
   </body>
 </html>
